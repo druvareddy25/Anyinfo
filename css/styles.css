@@ -1,0 +1,159 @@
+.background-image{
+
+  background-repeat: no-repeat;
+  position: relative;
+  isolation: isolate;
+}
+
+.background-image::after{
+  content: '';
+  position:absolute;
+  z-index: -1;
+  inset:0;
+  background: pink;
+  opacity:0.25;
+  background-size: cover;
+  background-position: center center;
+  background-image: url('../images/pexels.jpeg');
+}
+
+body{
+  text-align:center;
+  font-family: 'Montserrat';
+}
+
+p{
+  color:#8f8f8f;
+}
+
+h1, h2, h3{
+  font-weight: bold;
+}
+
+/* Title Section */
+
+#title{
+  background-color: #ff4c68;
+  color: #fff;
+  text-align: left;
+}
+
+@media (max-width:1029px){
+  #title{
+    text-align: center;
+  }
+}
+
+.download-button{
+  margin: 5% 3% 5% 0%;
+}
+
+.navcol{
+  color:#fff;
+  font-weight: bold;
+}
+
+.heading{
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: bold;
+  padding-top: 30px;
+}
+
+.download-button{
+  text-align: left;
+}
+
+.container-fluid{
+  padding: 3% 15% 7%;
+  padding-top:0;
+}
+
+.navbar-brand{
+  font-family:'Ubuntu';
+  font-weight: bold;
+  font-size:2.5rem;
+}
+
+.navbar{
+  padding-bottom: 4.5rem;
+}
+
+.nav-link{
+  font-size:1.2rem;
+  font-family: 'Montserrat';
+}
+
+.nav-item{
+  padding:0 18px 0 18px;
+}
+
+
+
+/* Features Section */
+
+#features{
+  padding: 7% 10% 7% 8%;
+  background-color: #e4f9f5;
+}
+
+.feat-head{
+  font-size:3rem;
+  line-height:1.5;
+  font-weight:bold;
+}
+
+.colgrid {
+    padding: 3% 2% 3% 2%;
+}
+
+.card p,.card h3{
+  color:#fff;
+}
+
+.bg1{
+  background-color: #ff4c68;
+}
+
+.bg2:hover{
+  background-color: #F67280;
+  transform: scale(1.05);
+}
+
+.bg2{
+  background-color: #0dcaf0;
+}
+
+/* TESTIMONIALS SECTON */
+
+#testimonials{
+  background-color: #ff4c68;
+  color: #fff;
+  padding-bottom: 30px;
+}
+
+.testimonial-image{
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.carousel-item{
+  padding:7% 15%;
+}
+
+.testimonial-text{
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+/* FOOTER */
+
+#footer{
+  padding: 7% 15% 5% 15%;
+  background-color: #e4f9f5;
+}
+
+.footicon{
+  margin:1%;
+}

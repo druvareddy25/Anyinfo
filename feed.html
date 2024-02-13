@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<div id="feedback-main>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/feed.css">
+    <script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/BOtOKyV0ZXN782Fp/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					if (window.confirm('Take me back to Home!')) 
+{
+  window.location.href='first.html';
+};
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
+</head>
+<body>
+    <div class="wrapper">
+      <div class="title-text">
+        <div class="title feedback">Feedback</div>
+      </div> 
+    
+        <div class="form-inner">
+   
+          <form id="myForm" >
+            
+            <input class="field" name="name" type="text" placeholder="Name" required/>
+         <br/>
+         
+            <input class="field" name="email" type="email"placeholder="Email" required />
+          <br/>
+          
+            <textarea  class="field" name="comment" type="comment" class="validate[required,length[10,400]] feedback-input" id="feedback-comment" required placeholder="Give your feedback here."></textarea>
+<br/>
+
+          </form>
+          <br/>
+          <div class="field btn">
+          <button onclick='SubForm()' class="btn-layer">Submit</button>
+          </div>
+        </div>
+     
+        
+      
+</div>
+</div>
+    <script src="feed.js"></script>
+ </body>
+</html>

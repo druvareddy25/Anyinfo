@@ -1,0 +1,23 @@
+.container1{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  animation: animate 16s ease-in-out infinite;
+}
+
+@keyframes animate{
+  0%{
+    background-image: url("https://b.zmtcdn.com/data/pictures/3/91833/24118ef6cd2af525b8ab80708f2c3f42.jpg");
+  }
+  25%{
+    background-image: url(images/jewel.jpeg);
+  }
+  50%{
+    background-image: url(images/exotica.jpeg);
+  }
+  75%{
+    background-image: url(images/jewel.jpeg);
+  }
+}

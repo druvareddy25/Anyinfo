@@ -1,0 +1,127 @@
+.background-image{
+
+    background-repeat: no-repeat;
+    position: relative;
+    isolation: isolate;
+  }
+
+  .background-image::after{
+    content: '';
+    position:absolute;
+    z-index: -1;
+    inset:0;
+    background: pink;
+    opacity:0.3;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('../images/bgp.jpej.png');
+  }
+  body{
+      text-align: center;
+      /* background-color: #ff4c68; */
+      background-color: #433e3e;
+      font-family: 'Montserrat';
+    }
+
+    #title{
+      color: #fff;
+      padding-bottom:5%;
+    }
+
+    .navcol{
+      color:#fff;
+      font-weight: bold;
+    }
+
+    .navbar-brand{
+      font-family:'Ubuntu';
+      font-weight: bold;
+      font-size:2.5rem;
+    }
+
+    .navbar{
+      padding-bottom: 4.5rem;
+    }
+
+    .nav-link{
+      font-size:1.2rem;
+      font-family: 'Montserrat';
+    }
+
+    .nav-item{
+      padding:0 18px 0 18px;
+    }
+
+    .heading{
+      font-size: 3.5rem;
+      line-height: 1.5;
+      margin-top:40px;
+      font-weight: bold;
+    }
+
+    /* contents */
+
+    #contents{
+      padding:0 5% 0 5%;
+    }
+
+    .accordianimg{
+      float:left;
+      border-radius:3%;
+    }
+
+    .accordian-body{
+      text-align: left;
+      height: 200%;
+    }
+
+    .accordian-item{
+      margin:3%;
+    }
+
+    .card-img-top{
+      height:180px;
+      width:286px;
+    }
+    .bg2{
+      background-color: #4a1127;
+      color:#fff;
+    }
+
+
+    .colgrid {
+        padding: 3% 3% 3% 3%;
+    }
+
+    .bg2:hover{
+      background-color: #F67280;
+      color: #fff;
+      transform: scale(1.05);
+    }
+    .bg3{
+      color:#fff;
+    }
+
+    .fa-star{
+      color: #e1ad21;
+    }
+
+    /* footer */
+
+
+    #footer{
+      padding: 3% 10% 3% 10%;
+      background-color: #e4f9f5;
+    }
+
+    #footer h3{
+      font-weight:bold;
+    }
+
+    .footicon{
+      margin:1%;
+    }
+
+    #footer p{
+      color: #8f8f8f;
+    }
